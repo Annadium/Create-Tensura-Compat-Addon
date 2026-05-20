@@ -33,6 +33,7 @@ public class ConstructRace extends DefaultRace {
     public List<ManasSkill> getIntrinsicSkills(ManasRaceInstance instance, LivingEntity entity) {
         List<ManasSkill> list = new ArrayList<>();
         list.add(SkillRegistry.MECHANICAL_EYE_SKILL.get());
+        list.add(SkillRegistry.MECHANICAL_HAND.get());
         return list;
     }
 }

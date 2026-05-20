@@ -1,5 +1,6 @@
 package com.annadium.createtensura.ability;
 
+import com.annadium.createtensura.AnnasCreateTensuraCompat;
 import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.content.equipment.goggles.GogglesItem;
 import io.github.manasmods.manascore.skill.api.ManasSkillInstance;
@@ -7,9 +8,11 @@ import io.github.manasmods.tensura.ability.skill.Skill;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +21,13 @@ import java.util.function.Predicate;
 public class MechanicalEyeSkill extends Skill {
     public MechanicalEyeSkill() {
         super(SkillType.INTRINSIC);
+    }
+
+    public static ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(AnnasCreateTensuraCompat.MODID, "textures/skill/intrinsic/mechanical_eye.png");
+
+    @Override
+    public @Nullable ResourceLocation getSkillIcon() {
+        return TEXTURE;
     }
 
     private final Map<Player, Predicate<Player>> activePr = new HashMap<>();

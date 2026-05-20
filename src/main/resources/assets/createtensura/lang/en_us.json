@@ -1,5 +1,10 @@
 {
   "createtensura.race.construct": "Construct",
   "createtensura.skill.mechanical_eye": "Mechanical Eye",
+  "createtensura.skill.mechanical_eye.description": "A Skill allowing you to view the ins and outs of Machinery!",
+  "createtensura.skill.mechanical_hand": "Mechanical Hand",
+  "createtensura.skill.mechanical_hand.description": "Configure your Hand into different wrench Modes!",
+  "createtensura.skill.mode.mechanical_hand.rotate": "Rotate!",
+  "createtensura.skill.mode.mechanical_hand.remove": "Remove!",
   "createtensura.race.construct.description": "A Machine out of Metal and Magicules, born to \u00a76Create\u00a7r, forced to gather materials."
 }
