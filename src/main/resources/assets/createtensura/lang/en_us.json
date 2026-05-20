@@ -1,10 +1,19 @@
 {
   "createtensura.race.construct": "Construct",
+  "createtensura.race.construct.description": "A Machine out of Metal and Magicules, born to \u00a76Create\u00a7r, forced to gather materials.",
   "createtensura.skill.mechanical_eye": "Mechanical Eye",
   "createtensura.skill.mechanical_eye.description": "A Skill allowing you to view the ins and outs of Machinery!",
   "createtensura.skill.mechanical_hand": "Mechanical Hand",
   "createtensura.skill.mechanical_hand.description": "Configure your Hand into different wrench Modes!",
   "createtensura.skill.mode.mechanical_hand.rotate": "Rotate!",
   "createtensura.skill.mode.mechanical_hand.remove": "Remove!",
-  "createtensura.race.construct.description": "A Machine out of Metal and Magicules, born to \u00a76Create\u00a7r, forced to gather materials."
+  "createtensura.race.robot": "Robot",
+  "createtensura.race.robot.description": "Fully Iron, Fully Sentient and Fully capable of major Destruction.",
+  "createtensura.race.mecha": "Mecha",
+  "createtensura.race.mecha.description": "A Giant Metallic Beast.",
+  "createtensura.race.gundam": "Gundam",
+  "createtensura.race.gundam.description": "The Largest beings known to the world, if they cant fit through a door, they'll replace it with a gate.",
+  "createtensura.race.warframe": "Warframe",
+  "createtensura.race.warframe.description": "A Mechanical being, made with the sole intention of destruction."
+
 }
