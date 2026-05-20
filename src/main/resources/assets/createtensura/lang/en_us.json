@@ -1,13 +1,5 @@
 {
-  "itemGroup.createtensura": "Example Mod Tab",
-  "block.createtensura.example_block": "Example Block",
-  "item.createtensura.example_item": "Example Item",
-
-  "createtensura.configuration.title": "Anna's Create Tensura Compat Configs",
-  "createtensura.configuration.section.createtensura.common.toml": "Anna's Create Tensura Compat Configs",
-  "createtensura.configuration.section.createtensura.common.toml.title": "Anna's Create Tensura Compat Configs",
-  "createtensura.configuration.items": "Item List",
-  "createtensura.configuration.logDirtBlock": "Log Dirt Block",
-  "createtensura.configuration.magicNumberIntroduction": "Magic Number Text",
-  "createtensura.configuration.magicNumber": "Magic Number"
+  "createtensura.race.construct": "Construct",
+  "createtensura.skill.mechanical_eye": "Mechanical Eye",
+  "createtensura.race.construct.description": "A Machine out of Metal and Magicules, born to \u00a76Create\u00a7r, forced to gather materials."
 }

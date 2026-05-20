@@ -1,9 +1,12 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id "io.freefair.lombok" version "8.10" apply false
     id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
 }
+
+apply plugin: 'io.freefair.lombok'
 
 tasks.named('wrapper', Wrapper).configure {
     // Define wrapper values here so as to not have to always do so when updating gradlew.properties.
@@ -27,6 +30,10 @@ sourceSets.main.resources {
 }
 
 repositories {
+    maven { url "https://maven.architectury.dev/" }
+    flatDir {
+        dirs 'lib'
+    }
     exclusiveContent {
         forRepository {
             maven {
@@ -149,9 +156,24 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    implementation "curse.maven:create-328085:7963363"
+    implementation "dev.architectury:architectury-neoforge:13.0.8"
+
     implementation "curse.maven:manascore-619025:8022425"
+
+    implementation files("lib/manascore-attribute-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-command-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-config-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-inventory-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-keybind-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-network-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-race-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-skill-neoforge-4.0.0.2.jar")
+    implementation files("lib/manascore-storage-neoforge-4.0.0.2.jar")
+
+    implementation "curse.maven:create-328085:7963363"
     implementation "curse.maven:tensura-reincarnated-643695:8098859"
+
+
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
