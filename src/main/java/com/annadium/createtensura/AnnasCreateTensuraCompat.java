@@ -1,6 +1,7 @@
 package com.annadium.createtensura;
 
 import com.annadium.createtensura.configs.ConstructConfig;
+import com.annadium.createtensura.configs.SkillConfig;
 import com.annadium.createtensura.registry.RaceRegistry;
 import com.annadium.createtensura.registry.SkillRegistry;
 import io.github.manasmods.manascore.config.ConfigRegistry;
@@ -48,30 +49,20 @@ public class AnnasCreateTensuraCompat {
     public AnnasCreateTensuraCompat(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         ConfigRegistry.registerConfig(new ConstructConfig());
+        ConfigRegistry.registerConfig(new SkillConfig());
         SkillRegistry.init();
         RaceRegistry.init();
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
 
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
-
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
-
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+
     }
 }

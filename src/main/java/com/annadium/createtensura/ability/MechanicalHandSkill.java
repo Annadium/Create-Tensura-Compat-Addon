@@ -1,8 +1,10 @@
 package com.annadium.createtensura.ability;
 
 import com.annadium.createtensura.AnnasCreateTensuraCompat;
+import com.annadium.createtensura.configs.SkillConfig;
 import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.content.equipment.wrench.IWrenchable;
+import io.github.manasmods.manascore.config.ConfigRegistry;
 import io.github.manasmods.manascore.skill.api.ManasSkillInstance;
 import io.github.manasmods.tensura.ability.SkillHelper;
 import io.github.manasmods.tensura.ability.TensuraSkillInstance;
@@ -43,14 +45,7 @@ public class MechanicalHandSkill extends Skill {
 
     @Override
     public double getMagiculeCost(LivingEntity entity, ManasSkillInstance instance, int mode) {
-        double cost;
-        switch (instance.getModes()) {
-            case 1 -> cost = 1.0;
-            case 2 -> cost = 2.0;
-            default -> cost = 0.0;
-        }
-
-        return cost;
+        return ConfigRegistry.getConfig(SkillConfig.class).mechanicalHand.magiculeCost;
     }
 
     @Override
