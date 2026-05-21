@@ -43,6 +43,11 @@ public class MechanicalEyeSkill extends Skill {
     }
 
     @Override
+    public boolean canBeSlotted(ManasSkillInstance instance, LivingEntity entity, int mode) {
+        return false;
+    }
+
+    @Override
     public void onToggleOn(ManasSkillInstance instance, LivingEntity entity) {
         if(entity instanceof Player player) {
             PlayerPredicateWrapper wrapper = new PlayerPredicateWrapper(player);
