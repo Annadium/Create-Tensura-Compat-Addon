@@ -48,7 +48,7 @@ public class MechanicalHandSkill extends Skill {
 
     @Override
     public int nextMode(LivingEntity entity, ManasSkillInstance instance, int mode, boolean reverse) {
-        if(mode == 1) return 2;
+        if(mode == 1) return 0;
         else return 1;
     }
 
@@ -63,7 +63,7 @@ public class MechanicalHandSkill extends Skill {
         MutableComponent name;
         switch (mode) {
             case 1 -> name = Component.translatable(AnnasCreateTensuraCompat.MODID + ".skill.mode.mechanical_hand.rotate");
-            case 2 -> name = Component.translatable(AnnasCreateTensuraCompat.MODID + ".skill.mode.mechanical_hand.remove");
+            case 0 -> name = Component.translatable(AnnasCreateTensuraCompat.MODID + ".skill.mode.mechanical_hand.remove");
             default -> name = Component.empty();
         }
         return name;
@@ -79,7 +79,7 @@ public class MechanicalHandSkill extends Skill {
                 case 1: // Mode 1: Rotate functionality (current "rotate" behavior)
                     rotateBlock(player, instance);
                     break;
-                case 2: // Mode 2: Remove functionality (pick up block using onSneakWrenched)
+                case 0: // Mode 2: Remove functionality (pick up block using onSneakWrenched)
                     removeBlock(player, instance);
                     break;
                 default:
