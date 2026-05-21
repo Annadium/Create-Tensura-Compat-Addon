@@ -30,8 +30,6 @@ import net.minecraft.world.phys.HitResult;
 import org.jetbrains.annotations.Nullable;
 
 public class MechanicalHandSkill extends Skill {
-    private final double skillCastCost = 20.0;  // Magicule cost per activation
-
     public MechanicalHandSkill() {
         super(SkillType.INTRINSIC);
     }
@@ -57,7 +55,7 @@ public class MechanicalHandSkill extends Skill {
     @Override
     public int getModes(ManasSkillInstance instance) {
         // Two modes: Rotate and Remove
-        return 3;
+        return 2;
     }
 
     @Override
