@@ -4,7 +4,9 @@ import com.annadium.createtensura.AnnasCreateTensuraCompat;
 import io.github.manasmods.manascore.config.api.Comment;
 import io.github.manasmods.manascore.config.api.ManasConfig;
 import io.github.manasmods.manascore.config.api.ManasSubConfig;
+import io.github.manasmods.manascore.config.api.SyncToClient;
 
+@SyncToClient
 public class SkillConfig extends ManasConfig {
     public MechanicalHand mechanicalHand = new MechanicalHand();
 
