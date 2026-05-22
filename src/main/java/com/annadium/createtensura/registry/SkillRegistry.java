@@ -14,6 +14,7 @@ public class SkillRegistry {
     public static final RegistrySupplier<MechanicalEyeSkill> MECHANICAL_EYE_SKILL = register("mechanical_eye", MechanicalEyeSkill::new);
     public static final RegistrySupplier<MechanicalHandSkill> MECHANICAL_HAND = register("mechanical_hand", MechanicalHandSkill::new);
 
+
     private static <E extends ManasSkill> RegistrySupplier<E> register(String name, Supplier<E> supplier) {
         return io.github.manasmods.manascore.skill.impl.SkillRegistry.SKILLS.register(ResourceLocation.fromNamespaceAndPath(AnnasCreateTensuraCompat.MODID, name), supplier);
     }
