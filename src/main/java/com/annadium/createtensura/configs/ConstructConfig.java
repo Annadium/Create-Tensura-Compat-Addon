@@ -11,7 +11,7 @@ import lombok.Generated;
 public class ConstructConfig extends ManasConfig {
     public Construct construct = new Construct();
     public Robot robot = new Robot();
-    public Mecha mecha = new Mecha();
+    public Golem golem = new Golem();
     public Gundam gundam = new Gundam();
     public Warframe warframe = new Warframe();
 
@@ -212,7 +212,7 @@ public class ConstructConfig extends ManasConfig {
         }
     }
 
-    public static class Mecha extends RaceConfig.Default {
+    public static class Golem extends RaceConfig.Default {
         @Comment("EP requirement to evolve into a Mecha.")
         public double epRequirement = 150000;
         @Comment("Minimal aura.")
@@ -240,7 +240,7 @@ public class ConstructConfig extends ManasConfig {
         @Comment("Bonus Swimming Speed Multiplier.")
         public double swimSpeed = -0;
 
-        public Mecha() {
+        public Golem() {
 
         }
 

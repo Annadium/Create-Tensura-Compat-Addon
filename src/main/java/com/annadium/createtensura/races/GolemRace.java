@@ -7,7 +7,6 @@ import io.github.manasmods.manascore.config.ConfigRegistry;
 import io.github.manasmods.manascore.race.api.ManasRace;
 import io.github.manasmods.manascore.race.api.ManasRaceInstance;
 import io.github.manasmods.manascore.skill.api.ManasSkill;
-import io.github.manasmods.tensura.ability.TensuraSkill;
 import io.github.manasmods.tensura.config.race.RaceConfig;
 import io.github.manasmods.tensura.race.template.EvolutionRequirement;
 import io.github.manasmods.tensura.registry.skill.IntrinsicSkills;
@@ -18,16 +17,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class MechaRace extends RobotRace {
+public class GolemRace extends RobotRace {
 
     @Override
     public RaceConfig.Default getDefaultConfig() {
-        return ConfigRegistry.getConfig(ConstructConfig.class).mecha;
+        return ConfigRegistry.getConfig(ConstructConfig.class).golem;
     }
 
     @Override
     public Map<EvolutionRequirement, Float> getEvolutionRequirements(ManasRaceInstance previous, LivingEntity entity) {
-        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).mecha.getEpRequirement()), 100f);
+        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).golem.getEpRequirement()), 100f);
     }
 
     @Override

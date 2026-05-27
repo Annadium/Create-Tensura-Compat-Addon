@@ -27,22 +27,22 @@ public class RobotRace extends ConstructRace {
 
     @Override
     public @Nullable ManasRace getDefaultEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.MECHA.get();
+        return RaceRegistry.GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getAwakeningEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.MECHA.get();
+        return RaceRegistry.GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getHarvestFestivalEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.MECHA.get();
+        return RaceRegistry.GOLEM.get();
     }
 
     @Override
     public List<ManasRace> getNextEvolutions(ManasRaceInstance instance, LivingEntity entity) {
-        return List.of(RaceRegistry.MECHA.get());
+        return List.of(RaceRegistry.GOLEM.get());
     }
 
     @Override

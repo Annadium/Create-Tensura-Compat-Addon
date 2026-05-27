@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Map;
 
-public class WarframeRace extends MechaRace {
+public class WarframeRace extends GolemRace {
 
     @Override
     public RaceConfig.Default getDefaultConfig() {
@@ -47,6 +47,6 @@ public class WarframeRace extends MechaRace {
 
     @Override
     public List<ManasRace> getPreviousEvolutions(ManasRaceInstance instance, LivingEntity entity) {
-        return List.of(RaceRegistry.MECHA.get());
+        return List.of(RaceRegistry.GOLEM.get());
     }
 }
