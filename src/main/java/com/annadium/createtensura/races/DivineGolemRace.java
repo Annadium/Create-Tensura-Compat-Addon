@@ -13,16 +13,16 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Map;
 
-public class GundamRace extends GolemRace {
+public class DivineGolemRace extends GreaterGolemRace {
 
     @Override
     public RaceConfig.Default getDefaultConfig() {
-        return ConfigRegistry.getConfig(ConstructConfig.class).gundam;
+        return ConfigRegistry.getConfig(ConstructConfig.class).divineGolem;
     }
 
     @Override
     public Map<EvolutionRequirement, Float> getEvolutionRequirements(ManasRaceInstance previous, LivingEntity entity) {
-        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).gundam.getEpRequirement()), 100f);
+        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).divineGolem.getEpRequirement()), 100f);
     }
 
     @Override
@@ -47,6 +47,6 @@ public class GundamRace extends GolemRace {
 
     @Override
     public List<ManasRace> getPreviousEvolutions(ManasRaceInstance instance, LivingEntity entity) {
-        return List.of(RaceRegistry.GOLEM.get());
+        return List.of(RaceRegistry.GREATER_GOLEM.get());
     }
 }

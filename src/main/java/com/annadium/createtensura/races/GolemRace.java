@@ -31,22 +31,22 @@ public class GolemRace extends RobotRace {
 
     @Override
     public @Nullable ManasRace getDefaultEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.GUNDAM.get();
+        return RaceRegistry.GREATER_GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getAwakeningEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.GUNDAM.get();
+        return RaceRegistry.GREATER_GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getHarvestFestivalEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return RaceRegistry.GUNDAM.get();
+        return RaceRegistry.GREATER_GOLEM.get();
     }
 
     @Override
     public List<ManasRace> getNextEvolutions(ManasRaceInstance instance, LivingEntity entity) {
-        return List.of(RaceRegistry.GUNDAM.get(), RaceRegistry.WARFRAME.get());
+        return List.of(RaceRegistry.GREATER_GOLEM.get());
     }
 
     @Override

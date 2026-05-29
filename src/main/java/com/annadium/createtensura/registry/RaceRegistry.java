@@ -12,8 +12,8 @@ public class RaceRegistry {
     public static final RegistrySupplier<ManasRace> CONSTRUCT = register("construct", ConstructRace::new);
     public static final RegistrySupplier<ManasRace> ROBOT = register("robot", RobotRace::new);
     public static final RegistrySupplier<ManasRace> GOLEM = register("golem", GolemRace::new);
-    public static final RegistrySupplier<ManasRace> GUNDAM = register("gundam", GundamRace::new);
-    public static final RegistrySupplier<ManasRace> WARFRAME = register("warframe", WarframeRace::new);
+    public static final RegistrySupplier<ManasRace> GREATER_GOLEM = register("greater_golem", GreaterGolemRace::new);
+    public static final RegistrySupplier<ManasRace> DIVINE_GOLEM = register("divine_golem", DivineGolemRace::new);
 
     public static void init() {
 

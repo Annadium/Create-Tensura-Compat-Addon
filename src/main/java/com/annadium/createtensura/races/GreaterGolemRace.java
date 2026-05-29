@@ -13,36 +13,36 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Map;
 
-public class WarframeRace extends GolemRace {
+public class GreaterGolemRace extends GolemRace {
 
     @Override
     public RaceConfig.Default getDefaultConfig() {
-        return ConfigRegistry.getConfig(ConstructConfig.class).warframe;
+        return ConfigRegistry.getConfig(ConstructConfig.class).greaterGolem;
     }
 
     @Override
     public Map<EvolutionRequirement, Float> getEvolutionRequirements(ManasRaceInstance previous, LivingEntity entity) {
-        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).warframe.getEpRequirement()), 100f);
+        return Map.of(new EvolutionRequirement.EPRequirement(ConfigRegistry.getConfig(ConstructConfig.class).greaterGolem.getEpRequirement()), 100f);
     }
 
     @Override
     public @Nullable ManasRace getDefaultEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return null;
+        return RaceRegistry.DIVINE_GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getAwakeningEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return null;
+        return RaceRegistry.DIVINE_GOLEM.get();
     }
 
     @Override
     public @Nullable ManasRace getHarvestFestivalEvolution(ManasRaceInstance instance, LivingEntity entity) {
-        return null;
+        return RaceRegistry.DIVINE_GOLEM.get();
     }
 
     @Override
     public List<ManasRace> getNextEvolutions(ManasRaceInstance instance, LivingEntity entity) {
-        return List.of();
+        return List.of(RaceRegistry.DIVINE_GOLEM.get());
     }
 
     @Override

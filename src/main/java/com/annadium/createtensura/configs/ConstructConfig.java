@@ -12,8 +12,8 @@ public class ConstructConfig extends ManasConfig {
     public Construct construct = new Construct();
     public Robot robot = new Robot();
     public Golem golem = new Golem();
-    public Gundam gundam = new Gundam();
-    public Warframe warframe = new Warframe();
+    public GreaterGolem greaterGolem = new GreaterGolem();
+    public DivineGolem divineGolem = new DivineGolem();
 
     public ConstructConfig() {
 
@@ -310,8 +310,8 @@ public class ConstructConfig extends ManasConfig {
         }
     }
 
-    public static class Gundam extends RaceConfig.Default {
-        @Comment("EP requirement to evolve into a Gundam.")
+    public static class GreaterGolem extends RaceConfig.Default {
+        @Comment("EP requirement to evolve into a Warframe.")
         public double epRequirement = 400000;
         @Comment("Minimal aura.")
         public double minAura = 200000;
@@ -322,23 +322,23 @@ public class ConstructConfig extends ManasConfig {
         @Comment("Maximum magicule.")
         public double maxMagicule = 900000;
         @Comment("Bonus Size.")
-        public double size = 4;
+        public double size = 0;
         @Comment("Bonus Max Health.")
-        public double maxHealth = 490;
+        public double maxHealth = 390;
         @Comment("Bonus Max Spiritual Health.")
         public double maxSpiritualHealth = 2990.0F;
         @Comment("Bonus Attack Damage.")
         public double attack = 3;
         @Comment("Bonus Attack Speed.")
-        public double attackSpeed = 0;
+        public double attackSpeed = 0.1;
         @Comment("Bonus Knockback Resistance.")
         public double knockbackResistance = 0.95F;
         @Comment("Bonus Movement Speed.")
-        public double movementSpeed = -0;
+        public double movementSpeed = 0.1;
         @Comment("Bonus Swimming Speed Multiplier.")
-        public double swimSpeed = -0;
+        public double swimSpeed = 0.1;
 
-        public Gundam() {
+        public GreaterGolem() {
 
         }
 
@@ -408,7 +408,7 @@ public class ConstructConfig extends ManasConfig {
         }
     }
 
-    public static class Warframe extends RaceConfig.Default {
+    public static class DivineGolem extends RaceConfig.Default {
         @Comment("EP requirement to evolve into a Warframe.")
         public double epRequirement = 400000;
         @Comment("Minimal aura.")
@@ -436,7 +436,7 @@ public class ConstructConfig extends ManasConfig {
         @Comment("Bonus Swimming Speed Multiplier.")
         public double swimSpeed = 0.1;
 
-        public Warframe() {
+        public DivineGolem() {
 
         }
 
