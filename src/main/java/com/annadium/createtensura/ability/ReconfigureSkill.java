@@ -25,6 +25,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 
+//TODO : finish this skill
 public class ReconfigureSkill extends Skill {
     public ReconfigureSkill() {
         super(SkillType.INTRINSIC);

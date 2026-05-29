@@ -38,7 +38,7 @@ public class ConstructConfig extends ManasConfig {
         @Comment("Bonus Max Health.")
         public double maxHealth = 6;
         @Comment("Bonus Max Spiritual Health.")
-        public double maxSpiritualHealth = 32.0F;
+        public double maxSpiritualHealth = 30.0F;
         @Comment("Bonus Attack Damage.")
         public double attack = 0;
         @Comment("Bonus Attack Speed.")
@@ -128,7 +128,7 @@ public class ConstructConfig extends ManasConfig {
         @Comment("Bonus Size.")
         public double size = 0;
         @Comment("Bonus Max Health.")
-        public double maxHealth = 10;
+        public double maxHealth = 20;
         @Comment("Bonus Max Spiritual Health.")
         public double maxSpiritualHealth = 40.0F;
         @Comment("Bonus Attack Damage.")
@@ -213,22 +213,22 @@ public class ConstructConfig extends ManasConfig {
     }
 
     public static class Golem extends RaceConfig.Default {
-        @Comment("EP requirement to evolve into a Mecha.")
+        @Comment("EP requirement to evolve into a Golem.")
         public double epRequirement = 150000;
         @Comment("Minimal aura.")
-        public double minAura = 50000;
+        public double minAura = 5000;
         @Comment("Maximum aura.")
-        public double maxAura = 50000;
+        public double maxAura = 15000;
         @Comment("Minimal magicule.")
         public double minMagicule = 14500;
         @Comment("Maximum magicule.")
-        public double maxMagicule = 19000;
+        public double maxMagicule = 29000;
         @Comment("Bonus Size.")
-        public double size = 1.5;
+        public double size = 0;
         @Comment("Bonus Max Health.")
-        public double maxHealth = 90;
+        public double maxHealth = 80;
         @Comment("Bonus Max Spiritual Health.")
-        public double maxSpiritualHealth = 300.0F;
+        public double maxSpiritualHealth = 280.0F;
         @Comment("Bonus Attack Damage.")
         public double attack = 2;
         @Comment("Bonus Attack Speed.")
@@ -311,7 +311,7 @@ public class ConstructConfig extends ManasConfig {
     }
 
     public static class GreaterGolem extends RaceConfig.Default {
-        @Comment("EP requirement to evolve into a Warframe.")
+        @Comment("EP requirement to evolve into a Greater Golem")
         public double epRequirement = 400000;
         @Comment("Minimal aura.")
         public double minAura = 200000;
@@ -409,28 +409,28 @@ public class ConstructConfig extends ManasConfig {
     }
 
     public static class DivineGolem extends RaceConfig.Default {
-        @Comment("EP requirement to evolve into a Warframe.")
-        public double epRequirement = 400000;
+        @Comment("EP requirement to evolve into a Divine Golem.")
+        public double epRequirement = 2000000;
         @Comment("Minimal aura.")
-        public double minAura = 200000;
+        public double minAura = 700000;
         @Comment("Maximum aura.")
-        public double maxAura = 200000;
+        public double maxAura = 700000;
         @Comment("Minimal magicule.")
-        public double minMagicule = 900000;
+        public double minMagicule = 2000000;
         @Comment("Maximum magicule.")
-        public double maxMagicule = 900000;
+        public double maxMagicule = 2000000;
         @Comment("Bonus Size.")
         public double size = 0;
         @Comment("Bonus Max Health.")
-        public double maxHealth = 390;
+        public double maxHealth = 1380;
         @Comment("Bonus Max Spiritual Health.")
-        public double maxSpiritualHealth = 2990.0F;
+        public double maxSpiritualHealth = 6980.0F;
         @Comment("Bonus Attack Damage.")
         public double attack = 3;
         @Comment("Bonus Attack Speed.")
         public double attackSpeed = 0.1;
         @Comment("Bonus Knockback Resistance.")
-        public double knockbackResistance = 0.95F;
+        public double knockbackResistance = 1F;
         @Comment("Bonus Movement Speed.")
         public double movementSpeed = 0.1;
         @Comment("Bonus Swimming Speed Multiplier.")
